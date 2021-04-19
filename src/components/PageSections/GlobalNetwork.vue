@@ -25,7 +25,9 @@ export default {
 
 <style lang="scss" scoped>
 .global-network {
-  margin: 60px 0;
+  background-color: #fff;
+  margin: 30px 0;
+  padding: 30px 0;
 
   .heading {
     font-size: 35px;

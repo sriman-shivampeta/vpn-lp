@@ -6,6 +6,7 @@
     <Section3 />
     <ChooseYourPlan />
     <GlobalNetwork />
+    <Footer />
   </div>
 </template>
 
@@ -17,6 +18,7 @@ import Section2 from "@/components/PageSections/Section2";
 import Section3 from "@/components/PageSections/Section3";
 import ChooseYourPlan from "@/components/PageSections/ChoosePlan";
 import GlobalNetwork from "@/components/PageSections/GlobalNetwork";
+import Footer from "@/components/PageSections/Footer";
 
 export default {
   name: "Home",
@@ -27,6 +29,7 @@ export default {
     Section3,
     ChooseYourPlan,
     GlobalNetwork,
+    Footer,
   },
 };
 </script>
