@@ -1,36 +1,38 @@
 <template>
-  <div class="d-flex justify-content-center align-items-center" style="height: 100vh">
-    <b-container>
-      <b-row>
-        <b-col offset-md="3" md="6">
-          <b-form @submit="onSubmit" @reset="onReset" v-if="show" class="box">
-            <b-form-group id="input-group-1" label="Email Address" label-for="input-1">
-              <b-form-input
-                id="input-1"
-                v-model="form.email"
-                type="email"
-                placeholder="Enter email"
-                required
-              ></b-form-input>
-            </b-form-group>
+  <div class="d-flex justify-content-center align-items-center height-100-vh">
+    <div>
+      <b-container>
+        <b-row>
+          <b-col>
+            <b-form @submit="onSubmit" @reset="onReset" v-if="show" class="box">
+              <b-form-group id="input-group-1" label="Email Address" label-for="input-1">
+                <b-form-input
+                  id="input-1"
+                  v-model="form.email"
+                  type="email"
+                  placeholder="Enter email"
+                  required
+                ></b-form-input>
+              </b-form-group>
 
-            <b-form-group id="input-group-3" label="Password" label-for="input-3">
-              <b-form-input
-                id="input-3"
-                v-model="form.password"
-                type="password"
-                placeholder="Enter Password"
-                required
-              ></b-form-input>
-            </b-form-group>
+              <b-form-group id="input-group-3" label="Password" label-for="input-3">
+                <b-form-input
+                  id="input-3"
+                  v-model="form.password"
+                  type="password"
+                  placeholder="Enter Password"
+                  required
+                ></b-form-input>
+              </b-form-group>
 
-            <b-button block type="submit" variant="primary">Submit</b-button>
-            <router-link to="/signup" class="text-muted">If not Registered</router-link>
-            <b-button block type="reset" variant="danger">Reset</b-button>
-          </b-form>
-        </b-col>
-      </b-row>
-    </b-container>
+              <b-button block type="submit" variant="primary">Submit</b-button>
+              <router-link to="/signup" class="text-muted">If not Registered</router-link>
+              <b-button block type="reset" variant="danger">Reset</b-button>
+            </b-form>
+          </b-col>
+        </b-row>
+      </b-container>
+    </div>
   </div>
 </template>
 
@@ -87,7 +89,7 @@ export default {
       text-align: center;
       border: 2px solid #3498db;
       padding: 10px 10px;
-      width: 250px;
+      width: auto;
       outline: none;
       color: white;
       border-radius: 24px;

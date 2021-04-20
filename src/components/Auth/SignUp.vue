@@ -1,5 +1,5 @@
 <template>
-  <div class="sign-up d-flex justify-content-center align-items-center">
+  <div class="sign-up d-flex justify-content-center align-items-center height-100-vh">
     <div>
       <b-container>
         <b-form @submit="onSubmit" @reset="onReset" v-if="show" class="box">
